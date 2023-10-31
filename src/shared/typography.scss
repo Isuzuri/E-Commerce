@@ -1,0 +1,39 @@
+@import url(variables.scss);
+@import url(colors.scss);
+
+p {
+    font-size: 1rem;
+}
+
+.header {
+    color: var(--gray);
+}
+
+.companyName {
+    letter-spacing: 0.3px;
+    font-weight: var(--boldText);
+}
+
+.productName {
+    color: var(--black);
+    font-weight: var(--boldText);
+}
+
+.productDescription {
+    color: var(--gray);
+}
+
+.productPrice {
+    color: var(--black);
+    font-weight: var(--boldText);
+}
+
+.productPriceStrike {
+    color: var(--gray);
+    font-weight: var(--boldText);
+}
+
+.sale {
+    color: var(--orange);
+    font-weight: var(--boldText);
+}
