@@ -1,9 +1,16 @@
+@mixin backgroundImage($url: 'https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200') {
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    padding: 2rem 0;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--light-gray);
 
     > div {
         display: flex;
@@ -15,9 +22,8 @@ nav {
         .logo {
             width: 138px;
             height: 20px;
-            background-image: url(../../images/logo.svg);
-            background-repeat: no-repeat;
-            background-position: center;
+            
+            @include backgroundImage('../../images/logo.svg');
         }
 
         .navigation {
@@ -28,7 +34,9 @@ nav {
 
             cursor: pointer;
 
-            > span {
+            > * {
+                padding: 2rem 0;
+
                 border-bottom: 4px solid transparent;
                 transition: border-bottom 0.2s ease-in-out;
 
@@ -47,15 +55,23 @@ nav {
         }
 
         .cart {
-            background-image: url(../../images/icon-cart.svg);
-            background-repeat: no-repeat;
-            background-position: center;
+            @include backgroundImage('../../images/icon-cart.svg');
+
+            cursor: pointer;
         }
 
         .user {
-            background-repeat: no-repeat;
-            background-position: center;
+            @include backgroundImage();
+
+            border: 2px solid transparent;
             border-radius: 50%;
+
+            transition: border 0.2s ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+                border: 2px solid var(--orange);
+            }
         }
     }
 }
