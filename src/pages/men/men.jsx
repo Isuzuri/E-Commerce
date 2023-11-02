@@ -1,6 +1,9 @@
 const Men = () => {
     return (
-        <h1>Men</h1>
+        <>
+            <header>Men</header>
+            <main className='tilesWrap'></main>
+        </>
     );
 }
  

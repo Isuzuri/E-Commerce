@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styles from './styles.module.scss'
 
 const Header = ({user}) => {
@@ -9,11 +9,11 @@ const Header = ({user}) => {
             <div className={styles.left}>
                 <div className={styles.logo}></div>
                 <div className={styles.navigation}>
-                    <Link to={'/collections'}>Collections</Link>
-                    <Link to={'/men'}>Men</Link>
-                    <Link to={'/women'}>Women</Link>
-                    <Link to={'/about'}>About</Link>
-                    <Link to={'/contact'}>Contact</Link>
+                    <NavLink to={'/collections'}>Collections</NavLink>
+                    <NavLink to={'/men'}>Men</NavLink>
+                    <NavLink to={'/women'}>Women</NavLink>
+                    <NavLink to={'/about'}>About</NavLink>
+                    <NavLink to={'/contact'}>Contact</NavLink>
                 </div>
             </div>
             <div className={styles.right}>

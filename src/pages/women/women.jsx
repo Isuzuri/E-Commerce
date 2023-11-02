@@ -1,6 +1,9 @@
 const Women = () => {
     return (
-        <h1>Women</h1>
+        <>
+            <header>Women</header>
+            <main className='tilesWrap'></main>
+        </>
     );
 }
  

@@ -5,8 +5,12 @@ p {
     font-size: 1rem;
 }
 
-.header {
-    color: var(--gray);
+header {
+    text-align: center;
+    font-weight: var(--boldText);
+    font-size: 3rem;
+
+    margin-bottom: 1rem;
 }
 
 .companyName {

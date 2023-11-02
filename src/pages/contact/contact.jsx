@@ -1,6 +1,9 @@
 const Contact = () => {
     return (
-        <h1>Contact</h1>
+        <>
+            <header>Contact</header>
+            <main className='tilesWrap'></main>
+        </>
     );
 }
  

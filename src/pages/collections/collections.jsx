@@ -1,6 +1,9 @@
 const Collections = () => {
     return (
-        <h1>Collections</h1>
+        <>
+            <header>Collections</header>
+            <main className='tilesWrap'></main>
+        </>
     );
 }
  

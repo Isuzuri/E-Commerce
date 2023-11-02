@@ -34,11 +34,15 @@ nav {
 
             cursor: pointer;
 
-            > * {
+            > a {
                 padding: 2rem 0;
 
                 border-bottom: 4px solid transparent;
                 transition: border-bottom 0.2s ease-in-out;
+
+                &:global.active {
+                    border-bottom: 4px solid var(--orange);
+                }
 
                 &:hover {
                     border-bottom: 4px solid var(--orange);   
